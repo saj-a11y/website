@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>cascade of css</title>
+	<style>
+		.style{
+			color:#0000ff;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-style: bold;
+			font-weight: bold;
+			font-size: 23px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		body{
+			font-size: 120%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Origin Example</h1>
+	<p class="style">the rule is simple:last declaration wins.</p>
+	<p style="color:black">if there is no conflict, declaration merge into one rule.</p>
+	<div>regular text</div>
+	<div style="font-size: 2em;">2em text
+		<div style="font-size: 2em">4em text
+			<div style="font-size: .5em">again 2em text
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
