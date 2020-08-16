@@ -7,3 +7,14 @@
 .container{
 	box-shadow: 10px 10px 8px #888888;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  #demo{
+  	margin-top: 100px;
+  }
+  #sign{
+  	margin-left: 100px;
+  }
+}
