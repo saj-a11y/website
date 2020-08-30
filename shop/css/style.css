@@ -1,13 +1,15 @@
+body{
+  box-sizing: border-box;
+}
+
+
 #demo{
 	margin-top: 30px;
 }
 #navbar-brand{
 	margin-right: 800px;
 }
-.container{
- 
-  box-shadow: 5px 8px 8px 8px black;
-  border-radius: 2px;
+
 }
 @media only screen and (max-width: 600px) {
   body {
@@ -20,8 +22,39 @@
   	margin-left: 100px;
   }
 }
-#div1{
-  border-radius: 2px solid #73AD21;
+div #div1{
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 10px  10px black;
 }
-
-  
+div #div2{
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 10px  10px black;
+}
+#title{
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  background: rgb(221, 10, 10);
+  margin-top: 100px;
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px black;
+}
+div #div3{
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+}
+.mr1{
+  margin-top: 50px;
+}
+.card{
+  box-sizing: border-box;
+  margin-top: 50px;
+  box-sizing: border-box;
+  background:grey;
+  box-shadow: 10px 10px rgb(0, 0, 0);
+  margin:28px;
+  margin-top: 100px;
+  border-radius: 15px 15px;
+}
