@@ -1,3 +1,76 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #212121;
+	font-family: sans-serif;
+}
+
+
+#login{
+	width: 700px;
+	height: 400px;
+	background: #FFB300;
+  margin: 0 auto;
+  margin-top: 150px;
+	border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,.5);
+  animation: login 5s infinite;
+}
+@keyframes login{
+  from {background-color:#FFB300 ;}
+  to {background-color:red;}
+}
+
+
+.a{
+	height: 80px;
+	color: black;
+	margin: 10px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
+}
+.a h1{
+	text-align: center;
+}
+.b{
+
+	height: 320px;
+	color: black;
+	margin: 30px 55px 10px 55px;
+}
+.b input[type="text"], .b input[type="password"]
+{
+	border-color: black;
+  outline: none;
+  width: 600px;
+
+}
+
+
+.b input[type="submit"]{
+	border: none;
+	outline: none;
+	color:white;
+	height: 30px;
+	width: 500px;
+	background: blue;
+  margin: 30px 50px 1px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+.b input[type="submit"]:hover{
+  
+  background-color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.b a{
+	color:blue;
+  margin: 10px 20px 10px 250px;
+}
+.b a:hover{
+  text-decoration: none;
+}
 
 #demo{
 	margin-top: 30px;

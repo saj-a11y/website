@@ -1,98 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<title> Login Page </title> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-            <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+			<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css"> 
-<style>   
-Body {  
-    background-image: url(img/shop3.png);
-  font-family: Calibri, Helvetica, sans-serif;  
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+ <body>
+	<style>
+		body{
+		 background-image: url(img/oriental-tiles.png);
+		}
    
-}  
-button {   
-       background-color: #4416e9;   
-       width: 100%;  
-        color: rgb(201, 28, 28);   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;   
-         }   
- form {   
-        border: 3px solid #f1f1f1;   
-    }   
- input[type=text], input[type=password] {   
-        width: 100%;   
-        margin: 8px 0;  
-        padding: 12px 20px;   
-        display: inline-block;   
-        border: 2px solid green;   
-        box-sizing: border-box;   
-    }  
- button:hover {   
-        opacity: 0.7;   
-    }   
-  .cancelbtn {   
-        width: auto;   
-        padding: 10px 18px;  
-        margin: 10px 5px;  
-    }   
-        
-     
- .container {   
-        padding: 25px;   
-        background-color: lightblue;  
-    }   
-</style>   
-</head>    
-<body> 
-<nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
-         <div id="navbar-brand">
-            <a class="navbar-brand" href="index.html" style="font-weight: bold;">SHOP DETAIL</a>
-         </div>
-      <div style="font-family: 'Acme', sans-serif;">
-        <ul class="nav nav-pills" class="nav navbar-nav navbar-end">
-             <li class="nav-item active">
-                <a class="nav-link  fas fa-home" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fab fa-snapchat-ghost" href="about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link active fas fa-clone" href="login.html">LOGIN</a>
-             </li>
-            <li class="nav-item" id="sign">
-                <a class="nav-link far fa-clone" href="signup.html">SIGN UP</a>
-            </li>
-        </ul>
-    </div>
-    </nav>   
-    <center> <h1> Login Form </h1> </center>   
-    <form style="margin-top: 100px;">  
-        <div class="container">   
-            <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit"><a href="index.html" >Login</a></button>   
-            <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" class="cancelbtn"> Cancel</button>   
-            Forgot <a href="#"> password? </a>   
-        </div>   
-    </form>    
-</body>     	
+	 </style>
+   
+   
+	   <nav class="navbar navbar-expand-sm bg-dark justify-content-center fixed-top">
+			<div id="navbar-brand">
+				<a class="navbar-brand" href="#" style="font-weight: bold;">SHOP DETAIL</a>
+			</div>
+		 <div style="font-family: 'Acme', sans-serif;">
+			 <ul class="nav nav-pills" class="nav navbar-nav navbar-end">
+				   <li class="nav-item active">
+					 <a class="nav-link fas fa-home" href="index.html">HOME</a>
+			   </li>
+			   <li class="nav-item">
+					 <a class="nav-link fab fa-snapchat-ghost" href="about.html">ABOUT US</a>
+			   </li>
+			   <li class="nav-item dropdown">
+				   <a class="nav-link active fas fa-clone" href="login.html">LOGIN</a>
+				 </li>
+			   <li class="nav-item" id="sign">
+					 <a class="nav-link far fa-clone" href="signup.html">SIGN UP</a>
+			   </li>
+			 </ul>
+	   </div>
+		 </nav>
+<div class="container" id="login"> 	
+		<div class="a">
+			<h1 style="font-family: 'Krona One', sans-serif;">Login Form</h1>
 
+		</div>
+	<div class="b">
+		<form class="form">
+		<label>Username:</label><br>
+		<input type="text" name="text"><br><br>
+		<label>Password:</label><br>
+		<input type="password" name="password"><br>
+		<input type="submit" name="submit" value="Login"><br><br>
+		<a href="file:///F:/app%20work/web%20development/website/Registration%20form.html">forgot password?</a>
+
+
+		</form>
+	</div>
+
+</div>
+</body>
 </html>
+
