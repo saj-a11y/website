@@ -7,7 +7,7 @@ body{
 
 
 #login{
-	width: 700px;
+	width: 800px;
 	height: 400px;
 	background: #FFB300;
   margin: 0 auto;
@@ -20,7 +20,24 @@ body{
   from {background-color:#FFB300 ;}
   to {background-color:red;}
 }
+#navbarSupportedContent ul li{
+  /* background-color:rgb(56, 62, 153); */
+  border: 2px solid black;
+  border-radius: 10px;
 
+  
+}
+#navbarSupportedContent ul li:hover{
+  display: block;
+  background-color: grey;
+  border-radius: 10px;
+  transition: all 0.4s;
+  font-size: 18px;
+  color: grey;
+}
+.active{
+  background-color:blue ;
+}
 
 .a{
 	height: 80px;
@@ -42,6 +59,7 @@ body{
 	border-color: black;
   outline: none;
   width: 600px;
+  border-radius: 5px;
 
 }
 
@@ -58,6 +76,9 @@ body{
   cursor: pointer;
   
 }
+button{
+  position: sticky;
+}
 .b input[type="submit"]:hover{
   
   background-color: grey;
@@ -73,7 +94,7 @@ body{
 }
 
 #demo{
-	margin-top: 30px;
+	margin-top: -30px;
 }
 #navbar-brand{
 	margin-right: 800px;
@@ -87,7 +108,7 @@ body{
     background-color: lightblue;
   }
   #demo{
-  	margin-top: 100px;
+  	margin-top: 30px;
   }
   #sign{
   	margin-left: 100px;
@@ -137,4 +158,76 @@ video{
 }
 .btn{
   border-radius: 25px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #212121;
+	font-family: sans-serif;
+}
+
+
+#signup{
+	width: 800px;
+	height: 1300px;
+	background: #FFB300;
+  margin: 0 auto;
+  margin-top: 80px;
+  box-shadow: 0 15px 40px rgba(0,0,.5);
+  box-sizing: border-box;
+  border-radius: 10px;
+  animation: login 5s infinite;
+}
+
+.a{
+	height: 80px;
+	color: black;
+	margin: 10px 0px 10px 0px;
+  padding: 10px 10px 10px 10px;
+  
+}
+.a h1{
+	text-align: center;
+
+}
+
+.b{
+
+	height: 1020px;
+	color: black;
+	margin: 15px 90px 10px 80px;
+}
+.b input[type="text"], .b input[type="password"], .b input[type="Phone"],.b input[type="date"]
+{
+	border-color: black;
+	outline: none;
+
+}
+.b textarea {
+	border-color: black;
+  outline: none;
+  border:2px solid black;
+  border-radius: 10px;
+
+}
+.b select{
+	border-color: black;
+	outline: none;
+	background: black;
+	color: white;
+}
+
+
+.b input[type="submit"]{
+	border: none;
+	outline: none;
+	color:white;
+	height: 25px;
+	width: 100px;
+	background: blue;
+	margin: 30px 20px 0px 50px;
+}
+.b a{
+	color: black;
+	margin: 10px 20px 10px 20px;
 }

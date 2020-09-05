@@ -26,36 +26,46 @@
 	 </style>
    
    
-	   <nav class="navbar navbar-expand-sm bg-dark justify-content-center fixed-top">
-			<div id="navbar-brand">
-				<a class="navbar-brand" href="#" style="font-weight: bold;">SHOP DETAIL</a>
-			</div>
-		 <div style="font-family: 'Acme', sans-serif;">
-			 <ul class="nav nav-pills" class="nav navbar-nav navbar-end">
-				   <li class="nav-item active">
-					 <a class="nav-link fas fa-home" href="index.html">HOME</a>
-			   </li>
-			   <li class="nav-item">
-					 <a class="nav-link fab fa-snapchat-ghost" href="about.html">ABOUT US</a>
-			   </li>
-			   <li class="nav-item dropdown">
-				   <a class="nav-link active fas fa-clone" href="login.html">LOGIN</a>
-				 </li>
-			   <li class="nav-item" id="sign">
-					 <a class="nav-link far fa-clone" href="signup.html">SIGN UP</a>
-			   </li>
-			 </ul>
-	   </div>
-		 </nav>
+	   <<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="index.html">SHOP_DETAIL</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" >
+		  <ul class="navbar-nav mr-auto justify-content-center">
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html">About Us</a>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="login.html">Login</a>
+			</li>
+			
+			<li class="nav-item">
+			  <a class="nav-link" href="signup.html">Signup</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="contact.html">Contact Us</a>
+			</li>
+		  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+		  </form>
+		</div>
+	  </nav>
 <div class="container" id="login"> 	
 		<div class="a">
-			<h1 style="font-family: 'Krona One', sans-serif;">Login Form</h1>
+			<h1 style="font-family: 'Anton', sans-serif;">Login Form</h1>
 
 		</div>
 	<div class="b">
 		<form class="form">
 		<label>Username:</label><br>
-		<input type="text" name="text"><br><br>
+		<input type="text" name="text" placeholder="Username..."><br><br>
 		<label>Password:</label><br>
 		<input type="password" name="password"><br>
 		<input type="submit" name="submit" value="Login"><br><br>
