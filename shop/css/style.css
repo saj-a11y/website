@@ -113,6 +113,9 @@ button{
   #sign{
   	margin-left: 100px;
   }
+  video{
+    width: 100%;
+  }
 }
 div #div1{
   box-sizing: border-box;
@@ -142,6 +145,7 @@ div #div3{
   margin-top: 50px;
 }
 .card{
+  position: relative;
   box-sizing: border-box;
   margin-top: 50px;
   box-sizing: border-box;
