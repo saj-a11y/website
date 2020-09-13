@@ -222,6 +222,18 @@ body{
 	color: black;
 	margin: 10px 20px 10px 20px;
 }
+ul li.media{
+  background-color: grey;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px black;
+  border: 2px solid black;
+}
+h1.developers{
+  text-align: center;
+  background-color: black;
+  color: white;
+  size: 30px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {

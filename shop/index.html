@@ -44,7 +44,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
     <ul class="navbar-nav mr-auto justify-content-center">
       <li class="nav-item active">
-        <a class="nav-link wow bounceInDown" data-wow-duration="3s"  href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link wow bounceInDown" data-wow-duration="2s"  href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">About Us</a>
@@ -57,15 +57,43 @@
         <a class="nav-link" href="signup.html">Signup</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact Us</a>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Us</button>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0 wow rubberBand" data-wow-duration="3s">
+    <form class="form-inline my-2 my-lg-0 wow rubberBand" data-wow-duration="2s">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>  
     <section class="section blog-post-entry bg-pattern">
       <br>
       <br>
@@ -106,12 +134,12 @@
 <br>
 <br>
 <section style="border-radius: 2px solid #73AD21;">
-  <div class="container wow bounceInDown" data-wow-duration="2s" id="div1" style="background-color: #808080;" >
+  <div class="container wow bounceInDown" data-wow-duration="3s" data-wow-delay="1s" id="div1" style="background-color: #808080;" >
       <div class="row">
-        <div id="s2" class="col-lg-6 col-md-6 col-sm-12 wow bounceInRight" data-wow-duration="3s">
+        <div id="s2" class="col-lg-6 col-md-6 col-sm-12 wow bounceInRight" data-wow-duration="3s" data-wow-delay="3s">
           <img src="img/s4.jpeg" width="530px" height="300px" class="img-fluid">
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInLeft" data-wow-duration="3s" style="font-family: 'Indie Flower', cursive; font-size: 16px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInLeft" data-wow-duration="3s" data-wow-delay="4s" style="font-family: 'Indie Flower', cursive; font-size: 16px;">
           <br>
 
         <h3 style="font-family: italic; font-weight: bold; font-family: 'Acme', sans-serif;">New Shops</h3>
@@ -126,9 +154,9 @@
   </div>
   <br>
   <br>
-  <div class="container wow bounceInUp" data-wow-duration="2s" data-wow-delay="3s" id="div2" style="background-color: #ffbf00;">
+  <div class="container wow bounceInUp" data-wow-duration="2s" data-wow-delay="1s" id="div2" style="background-color: #ffbf00;">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInRight" data-wow-duration="3s" data-wow-delay="5s" style="font-family: 'Indie Flower', cursive; font-size: 16px;">
+      <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInRight" data-wow-duration="3s" data-wow-delay="4s" style="font-family: 'Indie Flower', cursive; font-size: 16px;">
         <br>
         <h3 style="font-family: italic; font-weight: bold; font-family: 'Acme', sans-serif; ">New Shops</h3>
         <p><ul>
@@ -137,14 +165,14 @@
           <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
         </ul></p>
       </div>
-      <div id="s1" class="col-lg-6 col-md-6 col-sm-12 wow bounceInLeft" data-wow-duration="6s">
+      <div id="s1" class="col-lg-6 col-md-6 col-sm-12 wow bounceInLeft" data-wow-duration="3s" data-wow-delay="3s">
         <img src="img/s3.jpeg" alt="s3" width="530px" height="300px" class="img-fluid">
         
       </div>
     </div>
   </div>
   <br>
-  <marquee bgcolor="grey" scrollamount="5" class="wow bounceInRight"><p style="color: red;">24*7 service availble....</p></marquee>
+  <marquee bgcolor="grey" scrollamount="5" class="wow bounceInRight" data-wow-delay="4s"><p style="color: red;">24*7 service availble....</p></marquee>
 
 
 </section>
