@@ -267,6 +267,15 @@ h1.developers{
   div.card{
     width: 100%;
   }
+  div #demo{
+    height: 639px;
+  }
+  .carousel-item{
+    height: 639px;
+  }
+  div #div1{
+    margin-top: 40px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -282,8 +291,14 @@ h1.developers{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  div#demo.carousel-slide{
-    padding: 0%;
+  div #demo{
+    height: 639px;
+  }
+  .carousel-item{
+    height: 639px;
+  }
+  div #div1{
+    margin-top: 35px;
   }
 }
 
