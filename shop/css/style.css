@@ -3,13 +3,9 @@ body{
 	padding: 0;
 	background-color: #212121;
   font-family: sans-serif;
-  background:ivory;
-      animation: bg 4s infinite;
+  background-image: url("img/moroccan-flower-dark.png");
      }
-     @keyframes bg{
-       from {background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);}
-       to {background: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);}
-     }
+    
 
 
 #login{
@@ -247,6 +243,9 @@ h1.developers{
   color: white;
   size: 30px;
 }
+div #login{
+  width: 1150px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
@@ -286,7 +285,12 @@ h1.developers{
   video{
     width: 100%;
   }
-
+  div #demo{
+    height: 639px;
+  }
+  .carousel-item{
+    height: 639px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -300,6 +304,7 @@ h1.developers{
   div #div1{
     margin-top: 35px;
   }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
