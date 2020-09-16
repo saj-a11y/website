@@ -1,9 +1,8 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #212121;
+	background-image: url("../img/moroccan-flower-dark.png");
   font-family: sans-serif;
-  background-image: url("img/moroccan-flower-dark.png");
      }
     
 
@@ -24,21 +23,31 @@ body{
 }
 #navbarSupportedContent ul li{
   /* background-color:rgb(56, 62, 153); */
-  border: 2px solid black;
+  border: none;
   border-radius: 10px;
-
-  
+  margin-left: 10px;
+}
+#navbarSupportedContent ul {
+  margin-left: 330px;
 }
 #navbarSupportedContent ul li:hover{
   display: inline-block;
   background-color: grey;
-  border-radius: 10px;
   transition: all 0.4s;
-  font-size: 18px;
   color: grey;
+  animation: nav 2s infinite;
 }
+@keyframes nav{
+  from {border-bottom: 2px  solid orangered;}
+  to {border-bottom:  2px solid peru;}
+}
+#btn button[type="button"]{
+  background-color: yellow;
+}
+  
+
 .active{
-  background-color:blue ;
+  background-color: rgb(red, green, blue) ;
 }
 video #bgvideo{
   width: 100%;
@@ -144,8 +153,8 @@ div.card{
   box-sizing: border-box;
   background:grey;
   box-shadow: 10px 10px rgb(0, 0, 0);
-  margin:28px;
-  margin-top: 100px;
+  margin-bottom: 28px;
+  margin-top: 50px;
   border-radius: 25PX;
 
 }
