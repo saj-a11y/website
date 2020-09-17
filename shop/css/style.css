@@ -27,9 +27,6 @@ body{
   border-radius: 10px;
   margin-left: 10px;
 }
-#navbarSupportedContent ul {
-  margin-left: 330px;
-}
 #navbarSupportedContent ul li:hover{
   display: inline-block;
   background-color: grey;
@@ -47,7 +44,8 @@ body{
   
 
 .active{
-  background-color: rgb(red, green, blue) ;
+ background-color: gray;
+ animation: nav 2s infinite;
 }
 video #bgvideo{
   width: 100%;
