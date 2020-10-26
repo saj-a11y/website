@@ -83,24 +83,24 @@
 			<h1>Registration form</h1>
 		</div>
 		<div class="b">
-			<form>
+			<form name="register" action="#" onsubmit="return(validateform());" method="post">
 <label class="wow bounceInRight" data-wow-duration="2s">First Name :-</label><br>
-<input type="text" name="fname" placeholder="Firstname..." class="wow bounceInRight" data-wow-duration="2s"><br><br>
+<input type="text" name="fname" placeholder="Firstname..." class="wow bounceInRight" data-wow-duration="2s "><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Middle Name :-</label><br>
-<input type="text" name="mname" placeholder="middlename..." class="wow bounceInRight" data-wow-duration="2s"><br><br>
+<input type="text" name="mname" placeholder="middlename..." class="wow bounceInRight" data-wow-duration="2s" ><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Last Name :-</label><br>
-<input  class="wow bounceInRight" data-wow-duration="2s" type="text" name="lname" placeholder="lastname..." class="wow bounceInRight" data-wow-duration="2s"><br><br>
+<input  class="wow bounceInRight" data-wow-duration="2s" type="text"  name="lname" placeholder="lastname..." class="wow bounceInRight" data-wow-duration="2s"><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Select your gender :-</label><br>
 <input class="wow bounceInRight" data-wow-duration="2s" type="radio" name="gender"><span class="wow bounceInRight" data-wow-duration="2s">Male</span><br>
 <input class="wow bounceInRight" data-wow-duration="2s" type="radio" name="gender"><span class="wow bounceInRight" data-wow-duration="2s">Female</span><br>
 <input class="wow bounceInRight" data-wow-duration="2s" type="radio" name="gender"><span class="wow bounceInRight" data-wow-duration="2s">Others</span>
 <br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Date Of Birth :-</label><br>
-<input class="wow bounceInRight" data-wow-duration="2s" type="date" name="dob"><br><br>
+<input class="wow bounceInRight" data-wow-duration="2s" type="date" name="dob" ><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Email Id :-</label>
-<input class="wow bounceInRight" data-wow-duration="2s" type="text" name="email" placeholder="abc@gmail.com"><br><br>
+<input class="wow bounceInRight" data-wow-duration="2s" type="text" name="email" placeholder="abc@gmail.com" ><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Phone No :-</label>
-<input class="wow bounceInRight" data-wow-duration="2s" type="Phone" name="Phone" placeholder="123456789"><br><br>
+<input class="wow bounceInRight" data-wow-duration="2s" type="Phone" name="Phone" placeholder="123456789" ><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Select your Country :-</label>
 <select class="wow bounceInRight" data-wow-duration="2s">
 	<option class="wow bounceInRight" data-wow-duration="2s">Country</option>
@@ -112,14 +112,14 @@
 	<option class="wow bounceInRight" data-wow-duration="2s" value="Africa">Africa</option>
 </select><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Address :-</label><br>
-<textarea class="wow bounceInRight" data-wow-duration="2s" cols="73" rows="5" placeholder="address..."></textarea><br><br>
+<textarea class="wow bounceInRight" data-wow-duration="2s" cols="73" rows="5" placeholder="address..." ></textarea><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Username:</label><br>
 
-<input  class="wow bounceInRight" data-wow-duration="2s" type="text" name="username" placeholder="Username..."><br><br>
+<input  class="wow bounceInRight" data-wow-duration="2s" type="text" name="username" placeholder="Username..." ><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Password:-</label><br>
-<input  class="wow bounceInRight" data-wow-duration="2s"type="text" name="password" placeholder="Password... "><br><br>
+<input  class="wow bounceInRight" data-wow-duration="2s"type="password" name="password" placeholder="Password... " ><br><br>
 <label class="wow bounceInRight" data-wow-duration="2s">Confirm Password:-</label><br>
-<input  class="wow bounceInRight" data-wow-duration="2s" type="password" name="Confirm" placeholder="Confirmpasswords..."><br>
+<input  class="wow bounceInRight" data-wow-duration="2s" type="password" name="Confirm" placeholder="Confirmpasswords..." ><br>
 <input  class="wow bounceInRight" data-wow-duration="2s"type="submit" name="submit" value="Register">
 </form>
 </div>
@@ -143,7 +143,30 @@
   }
 );
 wow.init();
-        </script>
+function validateForm() {
+			var fname=document.register.fname.value;
+        mname=document.register.mname.value,
+        lname=document.register.lname.value,
+        gender=document.register.gender.value,
+        dob=document.register.dob.value,
+        email=document.register.email.value,
+        phone=document.register.phone.value,
+        country=document.register.country.value,
+        address=document.register.add.value,
+        username=document.register.username.value,
+        password=document.register.password.value,
+		pwd2=document.register.confirm.value;
+		
+			if (fname == "") {
+				alert("fname can not be blank");
+				document.register.fname.focus();
+				return false;
+			}
+			return(true);
+
+
+		}
+	</script>
 </body>
 </html>
 

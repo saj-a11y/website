@@ -91,7 +91,7 @@
 		<input type="text" name="text" placeholder="Username..." class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s"><br><br>
 		<label class="wow bounceInRight" data-wow-delay="2s">Password:</label><br>
 		<input type="password" name="password" class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="2s" placeholder="password..."><br>
-		<input type="submit" name="submit" value="Login" class="wow bounceInRight" data-wow-delay="4s"><br><br>
+		<input type="submit" name="submit" value="Login" class="wow bounceInRight" data-wow-delay="4s" onclick="fun();"><br><br>
 		<a href="file:///F:/app%20work/web%20development/website/Registration%20form.html" class="wow bounceInRight" data-wow-delay="5s">forgot password?</a>
 
 
@@ -118,6 +118,10 @@
   }
 );
 wow.init();
+function fun() {
+			window.alert("Enter Password");
+		  }
+        </script>
         </script>
 </body>
 </html>

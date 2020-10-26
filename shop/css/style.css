@@ -21,6 +21,10 @@ body{
   from {background-color:#FFB300 ;}
   to {background-color:red;}
 }
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
 #navbarSupportedContent ul li{
   /* background-color:rgb(56, 62, 153); */
   border: none;
@@ -43,7 +47,7 @@ body{
 }
   
 
-.active{
+ ul li.active{
  background-color: gray;
  animation: nav 2s infinite;
 }
