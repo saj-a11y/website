@@ -9,14 +9,72 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 	  <!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+	<script>
+		function validateForm(params) {
+			var emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+			var letters = /^[A-Za-z ]+$/; 
+			var fname=document.forms["register"]["fname"].value;
+				lname=document.forms["register"]["lname"].value;
+				email=document.forms["register"]["email"].value;
+				number=document.forms["register"]["Phone"].value;
+				adress=document.forms["register"]["adress"].value;
+				country=document.forms["register"]["country"].value;
+				username=document.forms["register"]["username"].value;
+				pass=document.forms["register"]["password"].value;
+				confirmp=document.forms["register"]["Confirm"].value;
+
+			if (!letters.test(fname)) {
+				document.getElementById("fname").innerHTML = "First name must be alphabet";
+				document.register.fname.focus();
+				return false;				
+			}
+			if(!letters.test(lname)){
+				document.getElementById("lname").innerHTML = "Last Name Must Be alphabet";
+				document.register.lname.focus();
+				return false;
+			}
+			if (!emailRegex.test(email)) {
+				document.getElementById("email").innerHTML = "invalid email id";
+				document.register.email.focus();
+				return false;
+			}
+			if (number.length != 10) {
+				document.getElementById("phone").innerHTML = "Enter 10 Digit Number";
+				document.register.number.focus();
+				return false;
+			}
+			if (pass.length <= 6) {
+				document.getElementById("pass").innerHTML = "password must be greater than 6 letters";
+				document.register.pass.focus();
+				return false;
+			}
+			if (confirmp != pass) {
+				document.getElementById("pass").innerHTML = "Passwword must be same";
+				document.register.confirmp.focus();
+				return false;	
+			}
+			if (document.register.gender[0].cheaked == false && document.register.gender[1].cheaked == false && document.register.gender[2	].cheaked == false) {
+				document.getElementById("country").innerHTML = "Select the country";
+				document.register.gender[0].focus();
+				return false;
+			}
+			if (country == "-") {
+				document.getElementById("country").innerHTML = "Select the country";
+				document.register.country.focus();
+				return false;
+			}
+	
+			
+		}
+	</script>
 </head>
 <body >
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -83,43 +141,52 @@
 			<h1>Registration form</h1>
 		</div>
 		<div class="b">
-			<form name="register" action="#" onsubmit="return(validateform());" method="post">
+			<form name="register" action="#" method="POST" onsubmit="return validateForm()">
 <label class="wow bounceInRight" data-wow-duration="2s">First Name :-</label><br>
-<input type="text" name="fname" placeholder="Firstname..." class="wow bounceInRight" data-wow-duration="2s "><br><br>
-<label class="wow bounceInRight" data-wow-duration="2s">Middle Name :-</label><br>
-<input type="text" name="mname" placeholder="middlename..." class="wow bounceInRight" data-wow-duration="2s" ><br><br>
+<input type="text" name="fname" placeholder="Firstname..." class="wow bounceInRight" data-wow-duration="2s" ><br><br>
+<p id="fname" style="color: white; text-decoration: underline;"></p>
+<!-- <label class="wow bounceInRight" data-wow-duration="2s">Middle Name :-</label><br>
+<input type="text" name="mname" placeholder="middlename..." class="wow bounceInRight" data-wow-duration="2s" ><br><br> -->
 <label class="wow bounceInRight" data-wow-duration="2s">Last Name :-</label><br>
 <input  class="wow bounceInRight" data-wow-duration="2s" type="text"  name="lname" placeholder="lastname..." class="wow bounceInRight" data-wow-duration="2s"><br><br>
+<p id="lname" style="color: white; text-decoration: underline;"></p>
 <label class="wow bounceInRight" data-wow-duration="2s">Select your gender :-</label><br>
 <input class="wow bounceInRight" data-wow-duration="2s" type="radio" name="gender"><span class="wow bounceInRight" data-wow-duration="2s">Male</span><br>
 <input class="wow bounceInRight" data-wow-duration="2s" type="radio" name="gender"><span class="wow bounceInRight" data-wow-duration="2s">Female</span><br>
 <input class="wow bounceInRight" data-wow-duration="2s" type="radio" name="gender"><span class="wow bounceInRight" data-wow-duration="2s">Others</span>
 <br><br>
-<label class="wow bounceInRight" data-wow-duration="2s">Date Of Birth :-</label><br>
-<input class="wow bounceInRight" data-wow-duration="2s" type="date" name="dob" ><br><br>
+<!-- <label class="wow bounceInRight" data-wow-duration="2s">Date Of Birth :-</label><br>
+<input class="wow bounceInRight" data-wow-duration="2s" type="date" name="dob" ><br><br> -->
 <label class="wow bounceInRight" data-wow-duration="2s">Email Id :-</label>
-<input class="wow bounceInRight" data-wow-duration="2s" type="text" name="email" placeholder="abc@gmail.com" ><br><br>
+<input class="wow bounceInRight" data-wow-duration="2s" type="text" name="email" placeholder="abc@gmail.com"><br><br>
+<p id="email" style="color: white; text-decoration: underline;"></p>
 <label class="wow bounceInRight" data-wow-duration="2s">Phone No :-</label>
-<input class="wow bounceInRight" data-wow-duration="2s" type="Phone" name="Phone" placeholder="123456789" ><br><br>
+<input class="wow bounceInRight" data-wow-duration="2s" type="Phone" name="Phone" placeholder="123456789"><br><br>
+<p id="phone" style="color: white; text-decoration: underline;"></p>
 <label class="wow bounceInRight" data-wow-duration="2s">Select your Country :-</label>
-<select class="wow bounceInRight" data-wow-duration="2s">
-	<option class="wow bounceInRight" data-wow-duration="2s">Country</option>
-	<option class="wow bounceInRight" data-wow-duration="2s" value="India">India</option>
-	<option class="wow bounceInRight" data-wow-duration="2s" value="Ban">Ban</option>
-	<option class="wow bounceInRight" data-wow-duration="2s" value="USA">USA</option>
-	<option  class="wow bounceInRight" data-wow-duration="2s" value="Australia">AUS</option>
-	<option class="wow bounceInRight" data-wow-duration="2s" value="New Zealand">New Zealand</option>
-	<option class="wow bounceInRight" data-wow-duration="2s" value="Africa">Africa</option>
+<select class="wow bounceInRight" data-wow-duration="2s" name="country" id="country">
+	<option class="wow bounceInRight" data-wow-duration="2s"value="-" id="country">-</option>
+	<option class="wow bounceInRight" data-wow-duration="2s" value="India" id="country">India</option>
+	<option class="wow bounceInRight" data-wow-duration="2s" value="Ban" id="country">Ban</option>
+	<option class="wow bounceInRight" data-wow-duration="2s" value="USA" id="country">USA</option>
+	<option  class="wow bounceInRight" data-wow-duration="2s" value="Australia" id="country">AUS</option>
+	<option class="wow bounceInRight" data-wow-duration="2s" value="New Zealand" id="country">New Zealand</option>
+	<option class="wow bounceInRight" data-wow-duration="2s" value="Africa" id="country">Africa</option>
 </select><br><br>
+<p id="country" style="color: white; text-decoration: underline;"></p>
 <label class="wow bounceInRight" data-wow-duration="2s">Address :-</label><br>
-<textarea class="wow bounceInRight" data-wow-duration="2s" cols="73" rows="5" placeholder="address..." ></textarea><br><br>
+<textarea class="wow bounceInRight" name="adress" data-wow-duration="2s" cols="73" rows="5" placeholder="address..." ></textarea><br><br>
+<p id="adress" style="color: white; text-decoration: underline;"></p>
 <label class="wow bounceInRight" data-wow-duration="2s">Username:</label><br>
 
-<input  class="wow bounceInRight" data-wow-duration="2s" type="text" name="username" placeholder="Username..." ><br><br>
+<input  class="wow bounceInRight" data-wow-duration="2s" type="text" name="username" placeholder="Username..."><br><br>
+<p id="username" style="color: white; text-decoration: underline;"></p>
 <label class="wow bounceInRight" data-wow-duration="2s">Password:-</label><br>
-<input  class="wow bounceInRight" data-wow-duration="2s"type="password" name="password" placeholder="Password... " ><br><br>
+<input  class="wow bounceInRight" data-wow-duration="2s"type="password" name="password" placeholder="Password... "><br><br>
+<p id="pass" style="color: white; text-decoration: underline;"></p>
 <label class="wow bounceInRight" data-wow-duration="2s">Confirm Password:-</label><br>
-<input  class="wow bounceInRight" data-wow-duration="2s" type="password" name="Confirm" placeholder="Confirmpasswords..." ><br>
+<input  class="wow bounceInRight" data-wow-duration="2s" type="password" name="Confirm" placeholder="Confirmpasswords..."><br>
+<p id="confirmp" style="color: white; text-decoration: underline;"></p>
 <input  class="wow bounceInRight" data-wow-duration="2s"type="submit" name="submit" value="Register">
 </form>
 </div>
@@ -143,30 +210,7 @@
   }
 );
 wow.init();
-function validateForm() {
-			var fname=document.register.fname.value;
-        mname=document.register.mname.value,
-        lname=document.register.lname.value,
-        gender=document.register.gender.value,
-        dob=document.register.dob.value,
-        email=document.register.email.value,
-        phone=document.register.phone.value,
-        country=document.register.country.value,
-        address=document.register.add.value,
-        username=document.register.username.value,
-        password=document.register.password.value,
-		pwd2=document.register.confirm.value;
-		
-			if (fname == "") {
-				alert("fname can not be blank");
-				document.register.fname.focus();
-				return false;
-			}
-			return(true);
-
-
-		}
-	</script>
+</script>
 </body>
 </html>
 
