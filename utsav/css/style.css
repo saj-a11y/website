@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:600');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 4s;
+}
+.buttongroup{
+    padding-left: 22%;
+}
+.btn{
+    color: white;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    margin-right: 3%;
+    font-size: 20px;
+}
+.btn:hover{
+    text-decoration: none;
+}
+.port{
+    background-color: #FB7F64;
+}
+.divisor{
+    background-color: #FB7F64;
+    height: 3px;
+    width: 80px;
+    margin-left: 11%;
+
+}
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: 
+}
+.bs-example{
+    margin-left: 11%;
+}
+#portfolio{
+    margin-top: 5%;
+}
+.active{
+    color:  #FB7F65;
+}
+section#about:hover ~ li a[href="#about"]{
+    color: #FB7F64;
+}
+#about h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'CircularStd' Bold;
+}
+nav{
+    background: rgba( 255, 255, 255, 0.55 );
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+box-shadow: 0 0 32px 0 #fff1ee;
+backdrop-filter: blur( 12.0px );
+-webkit-backdrop-filter: blur( 12.0px );
+/* border-radius: 10px;     */
+}
+.line{
+    animation: anim 0.5s infinite linear;
+}
+@keyframes anim{
+    0,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.dark-mode{
+    background: black;
+    color: white;
+}
+.tab{
+    background-color: black;
+}
+.line1{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin-left: 70%;
+    margin-top: -5%;
+}
+input[type="cheakbox"]{
+    width: 500px;
+    margin-left: 20%;
+
+}
+.fa-quote-left{
+    font-size: 50px;
+    z-index: -1;
+    opacity: 0.2;
+    color: wheat;
+    
+
+    
+}
+.quote{
+    margin-top: -7%;
+    padding-left: 15%;
+}
+.con{
+    padding-left: 15%;
+}
+/* .next{
+    border-radius: 10px;
+    width: 10px;
+    height: 10px; */
+/* } */
+/* .btn1{
+    margin-left: 10%;
+} */
+
+/* .btn{   
+    border: none;
+    outline: none;
+    background-color: #888;
+    padding: 10px 30px;
+    width: max-conten/t;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+} */
+.slideshow-container {
+    position: relative;
+    /* background: whit */
+    height: 157px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    /* padding: 80px; */
+    
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color:  #FB7F64;
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    /* padding: 20px; */
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  span .active, .dot:hover {
+    background-color: #FB7F64;
+    color: #FB7F64;
+    /* border-radius: 100%; */
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+  input[type="checkbox"]{
+      -webkit-appearance: none;
+      visibility: hidden;
+      display: none;
+  }
+  .check{
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 20px;
+      align-items: center;
+      /* min-height: 100vh; */
+      background: #092c3e;
+      cursor: pointer;
+      border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+  }
+  input[type="checkbox"]:checked ~ .check{
+    background: #fff;
+    /* box-shadow: 0 0 0 1200px #092c3e; */
+
+  }
+  .check:before{
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      transition: 0.5s;
+  }
+  input[type="checkbox"]:checked ~ .check::before{
+      transform: translateX(-50%);
+  }
+  .check:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #092c3e;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: 0.5s;
+    transform: translateX(50%);
+}
+input[type="checkbox"]:checked ~ .check::after{
+    transform: translateX(0px);
+}
+.media{
+    width: 500px;
+    height: 100px;
+    border: 2px solid #F5EEE2;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 35px
+    
+}
+.fab{
+    font-size: 40px;
+}
+.fas{
+    font-size: 40px;
+}
+.media:hover{
+    background-color: #FB7F64;
+    transition: 0.4s;
+    box-shadow: 0 8px 32px 0 rgba(251,127,100,1);
+    cursor: pointer;
+}
